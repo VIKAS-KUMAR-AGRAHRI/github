@@ -1,0 +1,3 @@
+Python has two division operators,
+       a single slash character for classic division 
+       a double-slash for “floor” division (rounds down to nearest whole number). 
