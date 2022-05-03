@@ -1,0 +1,21 @@
+Definition and Usage
+              The any() function returns True if any item in an iterable are true, otherwise it returns False.
+
+              If the iterable object is empty, the any() function will return False.
+ code:
+      mydict = {0 : "Apple", 1 : "Orange"}
+      x = any(mydict)
+      print(x)
+
+      # Returns True because the second key is True.
+
+      # For dictionaries the any() function checks the keys, not the values.
+
+                                                                    :All() Function:
+  Definition and Usage
+                      The all() function returns True if all items in an iterable are true, otherwise it returns False.
+
+                      If the iterable object is empty, the all() function also returns True.
+   code:
+        mylist = [True, True, True]
+        x = all(mylist)
