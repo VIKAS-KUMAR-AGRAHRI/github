@@ -1,0 +1,8 @@
+listen():   is used to establish and start TCP listener.
+bind():   is used to bind-address (host-name, port number) to the socket.
+accept():  is used to TCP client connection until the connection arrives.
+connect():  is used to initiate TCP server connection.
+send():  is used to send TCP messages.
+recv():  is used to receive TCP messages.
+sendto():   is used to send UDP messages
+close():   is used to close a socket.
