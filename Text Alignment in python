@@ -1,0 +1,15 @@
+.ljust():
+==========     This is use to adjust string in left side.
+
+.center():
+=========  This align text in center from both side.
+
+.rjust():
+========  This align text in right side.
+
+#All method use in one program....................
+  str1="vikas"
+  #syntax: variable.function_name(width,'symbol')
+  print(str1.center(20,'#'))
+  print(str1.ljust(20,'-'))
+  print(str1.rjust(20,'*'))
