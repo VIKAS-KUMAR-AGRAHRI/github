@@ -1,3 +1,4 @@
+# first method........................
 def isprime(n):
     if n<2:
         return False
@@ -18,3 +19,16 @@ while(i<=n):
             print(i)
             x=x**2
     i=i+1      
+#first method end  here..............
+#second method start from here..........
+n=int(input("enter the number"))
+def printdivisors(n):
+    i=1
+    while(i*i<=n):
+        if(n%i==0):
+            print(i)
+            if(i!=n//i):
+                print(n//i)
+        i=i+1
+printdivisors(n)
+#second method end here....................
