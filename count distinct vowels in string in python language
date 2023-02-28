@@ -1,0 +1,31 @@
+#first method .....................................................................
+def countVowels(self,s):
+        res=["a","e","i","o","u"]
+        a=set(s)
+        p=a.intersection(res)
+        return len(p)
+print(countVowels("vikas"))
+ #end here--------------------------------------------------------------------------
+ 
+ #2nd method ...................................................................
+ def countVowels(self,s):
+        l=['a','e','i','o','u'] #or we can use string as l="aeiou"
+        count=0
+        for c in l:
+            if c in s:
+                count+=1
+        return count
+ print(countVowels("vikas"))
+ #end here----------------------------------------------------------------------
+ #3rd method start here......................................................................................
+ def countVowels(self,s):
+        res=[]
+        count=0
+        for i in s:
+            if i=="a" or i=="e" or i=="i" or i=="o" or i=="u":
+                if i not in res:
+                    res.append(i)
+                    count+=1
+        return count
+ print(countVowels("vikas"))
+ #...................................end here___________________________________________________________________________________--
