@@ -1,0 +1,35 @@
+#first method.........................................
+def isAnagram(self,a,b):
+        #code here
+        if len(a)==len(b):
+            ad={}
+            bd={}
+            for i in range(len(a)):
+                if a[i] in ad:
+                    ad[a[i]]+=1
+                else:
+                    ad[a[i]]=1
+                if b[i] in bd:
+                    bd[b[i]]+=1
+                else:
+                    bd[b[i]]=1
+            if ad==bd:
+                return True
+                
+        return False
+#first end here...............................................................................
+
+#second method.................................
+def isAnagram(self,a,b):
+        if sorted(a)==sorted(b):
+            return True
+        else:
+            return False
+#end here second..............................................................
+
+#third method ..............................................................................................#
+from collections import Counter
+def isAnagram(self,a,b):
+        #code here
+        return Counter(a)==Counter(b)
+#end here...................---------------------------------------------------------

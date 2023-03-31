@@ -1,0 +1,9 @@
+#hashing pair 2 in python language............
+
+s=set()
+for i in range(N):
+    if sum-arr[i] not in s:
+            s.add(arr[i])
+    else:
+            return 1
+return 0

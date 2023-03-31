@@ -1,0 +1,18 @@
+def firstRepeated(self, arr, n):
+    d = {}
+    for i in arr:
+        if i in d:
+            d[i] += 1
+        else:
+            d[i] = 1
+    repe = None
+    for i in arr:
+        if d[i] > 1:
+            repe = i
+            break
+    if repe is not None:
+        for k in range(n):
+            if repe == arr[k]:
+                return k+1
+    return -1
+print(firstRepeated([1,5,3,4,3,5,6],7))

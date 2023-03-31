@@ -1,0 +1,9 @@
+a=[1,4,10,4,4,10]
+dic={}
+count=0
+for i in a:
+    if i not in dic:
+        dic[i]=1 
+        count+=1
+print(count)
+    
