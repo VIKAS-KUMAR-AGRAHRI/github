@@ -1,0 +1,42 @@
+#first method...............................
+def maximum(head):
+    #code here
+    ma=head.data
+    curr=head.next
+    while curr:
+        ma=max(curr.data,ma)
+        curr=curr.next
+    return ma
+    
+    
+    
+def minimum(head):
+    #code here
+    ma=head.data
+    curr=head.next
+    while curr:
+        ma=min(curr.data,ma)
+        curr=curr.next
+    return ma
+#second method .....................................................
+def maximum(head):
+    #code here
+    ma=0
+    curr=head
+    while curr:
+        if curr.data>ma:
+            ma=curr.data
+        curr=curr.next
+    return ma
+    
+    
+    
+def minimum(head):
+    #code here
+    mi=float('inf')
+    curr=head
+    while curr:
+        if curr.data<mi:
+            mi=curr.data
+        curr=curr.next
+    return mi
