@@ -1,0 +1,19 @@
+RETURN KEYWORD																																YEILD KEYWORD
+------------------------------------------|-------------------------------------------------
+* Return produce a specified value and 		| * While yeild return a list of value. yield when we want to iterate over a sequence,but don’t want to store the entire 				return to it's caller.                  |   sequence in memory.
+
+
+program:
+				 
+def simpleGeneratorFun():
+    yield 1
+    yield 2
+    yield 3
+ 
+ 
+# Driver code to check above generator function
+for value in simpleGeneratorFun():
+    print(value)
+
+definition:
+	In layman terms, the yield keyword will turn any expression that is given with it into a generator object and return it to the caller. Therefore, you must iterate over the generator object if you wish to obtain the values stored there. we will see the yield python example.
